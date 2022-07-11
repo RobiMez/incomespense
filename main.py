@@ -1,9 +1,13 @@
-from os import system
+from os import system,path,mkdir
 import time
 
 from colors import C,P
 c = C()
 p = P()
+
+# create file if not exists 
+if not path.exists('db'):
+    open('db','w').close()
 
     # ----------[ income side ]     [ Printing Function ]    [Expense side]------------
     # <--------------23-----><3><-----10-><4->|<4-><---10---><3><-----------26-------->
